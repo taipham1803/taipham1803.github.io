@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
+    name: deploy
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
