@@ -24,6 +24,8 @@ jobs:
     - name: deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
+        branch: main # The branch the action should deploy to.
+        folder: out # The folder the action should deploy.
         script: |
           git pull && yarn
           yarn build
